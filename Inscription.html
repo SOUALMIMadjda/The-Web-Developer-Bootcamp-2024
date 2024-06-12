@@ -8,7 +8,24 @@
 </head>
 
 <body>
+    <h1>Inscription</h1> <!--Un formulaire doit etre créé en se basant sur celui créé dans le fichier connexion.html-->
+    <form>
+        <input type="radio" name="oui" id="o" value="oui">
+        <label for="o">Oui</label>
 
+        <input type="radio" name="oui" id="n" value="no">
+        <!--J'ai donné le meme nom pour les associer afin de pouvoir séléctionner une seule option et pas toutes les options à la fois-->
+        <label for="n">Non</label>
+
+        <label for="status-select">Veuillez choisir votre status svp</label>
+
+        <select name="status" id="status">
+            <!--on peut ajouter attribut selected si on veut qu'une option soit séléctionée par défaut-->
+            <option value="">--Please choose an option--</option>
+            <option value="Etudiant">Etudiant(e)</option>
+            <option value="salarié">Salarié(e)</option>
+        </select>
+    </form>
 </body>
 
 </html>

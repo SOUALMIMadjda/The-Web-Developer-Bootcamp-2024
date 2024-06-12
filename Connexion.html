@@ -8,6 +8,34 @@
 </head>
 
 <body>
+    <h1>Connexion</h1>
+
+    <form action="/tacos">
+        <!--Définit le conteneur du formulaire et action définit la déstination de ce formulaire-->
+        <!--Consulter mdn input elements pour plus d'informations-->
+        <input type="text" id="Infos" name="e" placeholder="E-mail" pattern=".+@example\.com"
+            required><!--Placeholder est le texte affiché avant la saisie des données par l'utilisateur-->
+        <p></p>
+        <input name="p" type="password" placeholder="Password" required minlength="8"
+            id="pswd"><!--name attribut qui sera utilisé dans l'url lors du submit Ex: file:///tacos?e=hhh&p=ght-->
+        <p></p>
+        <button
+            type="">Connexion</button><!--Type submit par défaut; type="button" pour dire que c'est juste un boutton il fait rien-->
+        <!--        <input type="submit" value="Connexion"> est une autre façon de création boutton-->
+        <p></p>
+        <label for="rmbr">Remember me</label><!--Etiquettes pour les input-->
+        <input name="r" type="checkbox" id="rmbr">
+        <!--On peux ajouter checked si on veut qu'elle soit séléctionnée par défaut-->
+        <!--
+    <label >Remember me
+        <input name="Remember me" type="checkbox" id="rmbr"> c'est une autre façon de faire dont on est pas besoin de mettre les attributs Id et For.
+    </label>
+    -->
+        <a>Forgot password?</a>
+        <p></p>
+        <a href="Inscription.html">Inscription</a>
+
+    </form>
 
 </body>
 

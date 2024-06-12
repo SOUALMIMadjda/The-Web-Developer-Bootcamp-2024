@@ -96,6 +96,74 @@
         <a href="https://docs.emmet.io">Emmet</a> Extension pour ecrire rapidement des codes imbriqués ou complexes.
     </section>
 
+    <!--Les tableaux-->
+    <h1>Tables</h1>
+    <table>
+        <caption>
+            web bootcamp 2024
+        </caption>
+
+        <thead><!--Définit l'en-tete du tableau-->
+            <tr><!--Définit une ligne dans un tableau-->
+                <th rowspan="2">Modèle</th><!--Définit le header de la table-->
+                <th rowspan="2">Ram(GB)</th>
+                <th colspan="2">Etat</th>
+            </tr>
+            <tr>
+                <th>Bon état</th>
+                <th>Très bon état</th>
+            </tr>
+        </thead>
+        <tbody><!--Définit le corps du tableau-->
+            <tr>
+                <td>Hp</td><!--Cellule ou une case du tableau qui contient data-->
+                <td>8</td>
+                <td></td>
+                <td>&radic;</td>
+            </tr>
+            <tr>
+                <td>Dell</td>
+                <td>16</td>
+                <td>&radic;</td>
+            </tr>
+            <tr>
+                <td>Acer</td>
+                <td>34</td>
+                <td></td>
+
+                <td>&radic;</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot><!--Definit le pieds du tableau s'il existe-->
+    </table>
+
+    <!--Formulaires-->
+    <h1>Les formulaires</h1><!--quelques autres détails dans connexion.html et inscriptions.html-->
+
+    <!--Recherche via google-->
+    <form action="https://www.google.com/search">
+        <input name="q" type="text">
+        <!--Le nom q est récupéré via le lien de recherche en accédant a google et chercher directement un truc-->
+        <button>Search google</button>
+        <!--On  peut faire pareil avec reddit ou Youtube-->
+
+        <br>
+        <!--Range elements-->
+        <label for="fr">Niveau en Français</label>
+        <input type="range" id="fr" min="0" max="100" step="16">
+
+        <br>
+        <br>
+        <!--text area element-->
+        <label for="you">More about you </label>
+        <br>
+        <textarea placeholder="..." rows="5" cols="50" name="you" id="you"></textarea>
+    </form>
+
+
+
+
+
     <hr><!--Introduit une ligne horizontale pour une certaine séparation  Ex: En-tete-->
 
 
@@ -168,7 +236,93 @@
         <!--Exercice des entités-->
         <h1>Exercice 4: Les entités</h1>
         <h1>&#9731; <b>Snowman Productions</b> <sup>&#174;</sup></h1>
-        <!--Footer element-->
+
+        <!--Exercice des tableaux-->
+        <h1>Exercice 5: Les tableaux</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subscription </th>
+                    <th>Price</th>
+                    <th>Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Free</td>
+                    <td>Free</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Personal</td>
+                    <td>$9.99</td>
+                    <td>Weekdays</td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td>$49.99</td>
+                    <td>24/7</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Exercices sur les formulaires-->
+        <h1>Exercices 6: Les formulaires</h1>
+        <form>
+            <div>
+                <label for="u">Username</label>
+                <input id="u" type="text" name="username" placeholder="Username">
+            </div>
+            <div>
+                <label for="p">Password</label>
+                <input id="p" type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <button id="r1">Register</button>
+            </div>
+        </form>
+
+        <!--Marathon Registration-->
+
+        <div>
+            <h1>Marathon registration</h1>
+            <form action="">
+                <h1>Race Registration!</h1>
+                <div>
+                    <label for="f">First name</label>
+                    <input id="f" type="text" name="fname" required pattern="[a,z]">
+                    <label for="l">Last name</label>
+                    <input id="l" type="text" name="lname" required pattern="[a,z]">
+                </div>
+                <p>Select a race:</p>
+                <div>
+                    <input type="radio" id="fr5K" name="race" value="fr5K">
+                    <label for="fr5K">Fun run 5K</label>
+                    <p></p>
+                    <input type="radio" id="half" name="race" value="half">
+                    <label for="half">Half arathon</label>
+                    <p></p>
+                    <input type="radio" id="full" name="race" value="full">
+                    <label for="full">Full marathon</label>
+                </div>
+                <div>
+                    <label for="Infos">E-mail</label>
+                    <input type="text" id="Infos" name="e" pattern=".+@example\.com" required>
+                    <label for="pswd">Password</label>
+                    <input name="p" type="password" required minlength="8" id="pswd">
+                </div>
+                <div>
+                    <label for="age">Select age group</label>
+                    <select name="age" id="age">
+                        <option>Under 18</option>
+                        <option>18-45</option>
+                        <option>+45</option>
+                </div>
+                <div>
+                    <button id="r2">Register</button>
+                </div>
+            </form>
+        </div>
     </section>
 
     <!--Footer element-->
